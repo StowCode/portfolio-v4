@@ -1,0 +1,39 @@
+.navbar {
+    background-color: rgb(59, 59, 59);
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+
+    .nav-logo {
+        width: 225px;
+    }
+
+    .navlinks {
+        width: 40vw;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Roboto Mono';
+
+        .link {
+        color: white;
+        font-size: 26px;
+        text-decoration: none;
+
+            &:visited {
+                color: white;
+            }
+
+            &:hover {
+                color: #7afb71;
+            }
+        }
+
+        .resume-btn {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
