@@ -1,0 +1,28 @@
+.sidebar {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    z-index: 10;
+    background-color: black;
+
+    .icons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+
+        .icon {
+            fill: white;
+            height: 50px;
+            width: 50px;
+            margin: 25px 0;
+
+            &:hover {
+                fill: #7afb71;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
