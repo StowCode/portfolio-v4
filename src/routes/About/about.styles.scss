@@ -1,0 +1,46 @@
+#aboutme {
+    background-color: black;
+    height: calc(100vh - 125px);
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 100px 10vw;
+
+    .bio-container {
+        display: flex;
+        align-items: center;
+
+        .headshot {
+            width: 20vw;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 4vw;
+        }
+    
+        p {
+            font-size: 1.5vw;
+            line-height: 2vw;
+            margin-left: 50px;
+        }
+    }
+
+    h2 {
+        margin-top: 75px;
+        font-size: 3vw;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .skillbutton {
+            margin-right: 25px;
+            margin-top: 25px;
+        }
+    }
+
+}
+
+
