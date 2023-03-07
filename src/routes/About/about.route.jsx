@@ -1,11 +1,16 @@
 import { motion } from 'framer-motion';
 
+// Styling and Images
 import '../About/about.styles.scss';
 import Headshot from '../../static/headshot.jpg';
 
+// Comps
+import SideBar from '../../comps/sidebar/sidebar.comp.';
+import SkillBadge from '../../comps/skill-badge/badge.comp';
+
 export default function About() {
     return(
-        <div id='aboutme'>
+        <div className='aboutme page'>
             
             <div className='bio-container'>
 
@@ -21,14 +26,12 @@ export default function About() {
                     In my time as a developer, I have designed, developed, and launched highly responsive and interactive websites. With the use of browser based 3D rendering, I have crafted immersive and addicting web experiences that create public engagement with products and company culture. Additionally, I pride myself on being a team player, and adapting to overcome challenges.
                 </p>
             </div>
-                
+
+{/* SKILLS */}
                 <h2>Skills</h2>
                 <div className='skills'>
                     <motion.div
                         className='badge-flex'
-                        onHover={{
-                            rotate: [0, 360]
-                        }}
                         animate={{
                             scale: [1, 1.1, 1],
                             background: ['#e34f2680', '#e34f26', '#e34f2680' ]
@@ -116,9 +119,10 @@ export default function About() {
                     >
                         <img className="skillbutton" src="https://img.shields.io/badge/figma-%23F24E1E00.svg?style=for-the-badge&logo=figma&logoColor=white" />
                     </motion.div>
-
+                    
                 </div>
 
+            <SideBar />
         </div>
     )
 }
