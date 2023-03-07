@@ -24,28 +24,98 @@ export default function About() {
                 
                 <h2>Skills</h2>
                 <div className='skills'>
-{/*                     <motion.div className="skillbutton" id="html_btn"
-                        whileHover={{
-                            scale: 1.2
+                    <motion.div
+                        className='badge-flex'
+                        onHover={{
+                            rotate: [0, 360]
+                        }}
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#e34f2680', '#e34f26', '#e34f2680' ]
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
                         }}
                     >
-                        <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
-                    </motion.div> */}
-                    <div className="skillbutton" id="css_btn">
-                        <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
-                    </div>
-                    <div className="skillbutton" id="javascript_btn">
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
-                    </div>
-                    <div className="skillbutton" id="react_btn">
-                        <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-                    </div>
-                    <div className="skillbutton" id="threejs_btn">
-                        <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" />
-                    </div>
-                    <div className="skillbutton" id="figma_btn">
-                        <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" />
-                    </div>
+                        <img className="skillbutton" src="https://img.shields.io/badge/html5-%23E34F2600.svg?style=for-the-badge&logo=html5&logoColor=white" />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#1572b680', '#1572b6', '#1572b680' ]
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <img className="skillbutton" src="https://img.shields.io/badge/css3-%231572B600.svg?style=for-the-badge&logo=css3&logoColor=white" />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#32333080', '#323330', '#32333080' ]
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <img className="skillbutton" src="https://img.shields.io/badge/javascript-%2332333000.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#20232a80', '#20232a', '#20232a80' ]
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <img className="skillbutton" src="https://img.shields.io/badge/react-%2320232a00.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#55555580', '#555555', '#55555580' ]
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}    
+                    >
+                        <img className="skillbutton" src="https://img.shields.io/badge/threejs-%2355555500.svg?style=for-the-badge&logo=three.js&logoColor=white" />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            scale: [1, 1.1, 1],
+                            background: ['#f24e1e80', '#f24e1e', '#f24e1e80' ],
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <img className="skillbutton" src="https://img.shields.io/badge/figma-%23F24E1E00.svg?style=for-the-badge&logo=figma&logoColor=white" />
+                    </motion.div>
 
                 </div>
 
