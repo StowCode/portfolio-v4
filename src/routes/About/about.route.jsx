@@ -5,7 +5,7 @@ import '../About/about.styles.scss';
 import Headshot from '../../static/headshot.jpg';
 
 // Comps
-import SideBar from '../../comps/sidebar/sidebar.comp.';
+import SideBar from '../../comps/sidebar/sidebar.comp';
 import SkillBadge from '../../comps/skill-badge/badge.comp';
 import AnimatedPage from '../../comps/animated-page.comp';
 

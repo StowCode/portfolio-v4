@@ -35,6 +35,10 @@
         }
 
         .resume-btn {
+            border: 1px solid #7afb7194;
+            padding: 3px 10px;
+            border-radius: 3px;
+
             &:hover {
                 cursor: pointer;
             }

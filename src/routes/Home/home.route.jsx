@@ -1,6 +1,6 @@
 // Comps
 import AnimatedPage from '../../comps/animated-page.comp';
-import SideBar from '../../comps/sidebar/sidebar.comp.';
+import SideBar from '../../comps/sidebar/sidebar.comp';
 
 // Style
 import '../Home/home.styles.scss';
