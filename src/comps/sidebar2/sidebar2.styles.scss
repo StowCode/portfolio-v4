@@ -1,0 +1,41 @@
+.animated-sidebar {
+    color: white;
+    position: absolute;
+    width: 75px;
+    right: 0;
+    top: 170px;
+    z-index: 10;
+
+    .motion-icons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 320px;
+    }
+    
+    .icon-container {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 0px 0px 5px #7afb715b;
+    }
+    
+    .motion-icon {
+        fill: white;
+        height: 30px;
+        width: 30px;
+        margin: 0px 0;
+    
+        &:hover {
+            fill: #7afb71;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+
+
+ 

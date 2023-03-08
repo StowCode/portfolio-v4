@@ -1,6 +1,6 @@
 import '../Contact/contact.styles.scss';
 import AnimatedPage from '../../comps/animated-page.comp';
-import SideBar from '../../comps/sidebar/sidebar.comp';
+import SideBar2 from '../../comps/sidebar2/sidebar2.comp';
 
 const Contact = () => {
     return(
@@ -8,7 +8,7 @@ const Contact = () => {
             <AnimatedPage>
                 <h1>Get in Touch</h1>
             </AnimatedPage>
-            <SideBar />
+            <SideBar2 />
         </div>
     )
 }
