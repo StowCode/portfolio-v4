@@ -11,10 +11,22 @@ const SideBar = () =>  {
     return(
         <div className='sidebar'>
              <div className='icons'>
-                <Github className='icon'/>
-                <LinkedIn className='icon'/>
-                <Instagram className='icon'/>
-                <Email className='icon'/>
+                <a href="https://github.com/StowCode" target="blank">
+                    <Github className='icon'/>
+                </a>
+
+                <a href='https://www.linkedin.com/in/mitchstowman/' target='blank'>
+                    <LinkedIn className='icon'/>
+                </a>
+                
+                <a href='https://www.instagram.com/mitch.stowman/' target='blank'>
+                    <Instagram className='icon'/>
+                </a>
+                
+                <a href="mailto:mitchellstowman@gmail.com">
+                    <Email className='icon'/>
+                </a>
+
                 <div className='line'></div>
             </div>
         </div>

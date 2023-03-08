@@ -3,6 +3,7 @@ import '../sidebar2/sidebar2.styles.scss';
 
 // Framer
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Images
 import { ReactComponent as Github } from '../../static/svg/github.svg';
@@ -104,7 +105,9 @@ const SideBar2 = () =>  {
                     }}
                 >
                     <div className='icon-container'>
-                        <Github className='motion-icon'/>
+                        <a href="https://github.com/StowCode" target="blank">
+                            <Github className='motion-icon'/>
+                        </a>
                     </div>
                 </motion.div>
                 
@@ -118,7 +121,9 @@ const SideBar2 = () =>  {
                     }}
                 >
                     <div className='icon-container'>
-                        <LinkedIn className='motion-icon'/>
+                        <a href='https://www.linkedin.com/in/mitchstowman/' target='blank'>
+                            <LinkedIn className='motion-icon'/>
+                        </a>
                     </div>
                 </motion.div>
                 
@@ -132,7 +137,9 @@ const SideBar2 = () =>  {
                     }}
                 >
                     <div className='icon-container'>
-                        <Instagram className='motion-icon'/>
+                        <a href='https://www.instagram.com/mitch.stowman/' target='blank'>
+                            <Instagram className='motion-icon'/>
+                        </a>
                     </div>
                     
                 </motion.div>
@@ -147,7 +154,9 @@ const SideBar2 = () =>  {
                     }}
                 >
                     <div className='icon-container'>
-                        <Email className='motion-icon'/>
+                        <a href="mailto:mitchellstowman@gmail.com">
+                            <Email className='motion-icon'/>
+                        </a>
                     </div>
                 </motion.div>
                 
