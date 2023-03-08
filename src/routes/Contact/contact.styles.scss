@@ -1,6 +1,32 @@
 .contact-page {
     color: white;
-    height: calc(100vh - 125px);
+    height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0 10vw;
+
+    .tile-label {
+        font-family: 'Vujahday Script', sans-serif;
+        font-size: 32px;
+    }
+
+    .github-label {
+        padding-top: 180px;
+        margin-left: 30vw;
+    }
+
+    .linkedin-label {
+        padding-top: 150px;
+        margin-left: 47vw;
+    }
+
+    .instagram-label {
+        padding-top: 160px;
+        margin-left: 27vw;
+    }
+
+    .email-label {
+        padding-top: 150px;
+        margin-left: 47vw;
+    }
 }
+

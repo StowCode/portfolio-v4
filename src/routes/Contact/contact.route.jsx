@@ -6,7 +6,10 @@ const Contact = () => {
     return(
         <div className='contact-page page'>
             <AnimatedPage>
-                <h1>Get in Touch</h1>
+                <h4 className='tile-label github-label'>Github</h4>
+                <h4 className='tile-label linkedin-label'>LinkedIn</h4>
+                <h4 className='tile-label instagram-label'>Instagram</h4>
+                <h4 className='tile-label email-label'>Email</h4>
             </AnimatedPage>
             <SideBar2 />
         </div>
