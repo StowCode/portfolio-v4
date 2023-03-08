@@ -28,12 +28,14 @@ const ProjectTile = () => {
                 return(
                     <motion.div 
                         className='motion-tile'
-                        layout='position'
+                        layout
                         initial={{
-                            width: '30vw'
+                            width: '30vw',
+                            height: '30vw'
                         }}
                         whileHover={{
                             width: '80vw',
+                            height: '80vh',
                             zIndex: '2',
                             justifySelf: 'center'
                         }}
