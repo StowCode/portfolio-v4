@@ -1,4 +1,14 @@
 .motion-tile {
     color: white;
     border: 1px solid #79f170;
+    margin: 10px;
+    /* Height and Width set in Animation */
+}
+
+.project-tiles {
+    padding-top: 100px;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

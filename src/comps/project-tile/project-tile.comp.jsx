@@ -23,19 +23,19 @@ const ProjectTile = () => {
     
 
     return(
-        <div>
+        <div className='project-tiles'>
             { projects.map(item => {
                 return(
                     <motion.div 
                         className='motion-tile'
                         layout
                         initial={{
-                            width: '30vw',
-                            height: '30vw'
+                            width: '32vw',
+                            height: '32vw'
                         }}
                         whileHover={{
-                            width: '80vw',
-                            height: '80vh',
+                            width: '35vw',
+                            height: '35vw',
                             zIndex: '2',
                             justifySelf: 'center'
                         }}
@@ -45,11 +45,7 @@ const ProjectTile = () => {
                 )
             })}
 
-
-
         </div>
-
-
     )
 }
 

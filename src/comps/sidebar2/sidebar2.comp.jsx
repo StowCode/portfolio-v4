@@ -3,7 +3,6 @@ import '../sidebar2/sidebar2.styles.scss';
 
 // Framer
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 // Images
 import { ReactComponent as Github } from '../../static/svg/github.svg';
@@ -16,19 +15,16 @@ const SideBar2 = () =>  {
         initial: {
             x: 0,
             y: 0,
-            backgroundColor: '#000000'
         },
         animate: {
             x: '-40vw',
             y: 125,
             scale: 4.5,
-            backgroundColor: '#FFFFFF30'
         },
         exit: {
             x: 0,
             y: 0,
             scale: 1,
-            backgroundColor: '#000000'
         },
     }
 
@@ -36,19 +32,16 @@ const SideBar2 = () =>  {
         initial: {
             x: 0,
             y: 0,
-            backgroundColor: '#000000'
         },
         animate: {
             x: '-50vw',
             y: 250,
             scale: 4.5,
-            backgroundColor: '#FFFFFF30'
         },
         exit: {
             x: 0,
             y: 0,
             scale: 1,
-            backgroundColor: '#000000'
         }
     }
 
@@ -56,19 +49,16 @@ const SideBar2 = () =>  {
         initial: {
             x: 0,
             y: 0,
-            backgroundColor: '#000000',
         },
         animate: {
             x: '-40vw',
             y: 375,
             scale: 4.5,
-            backgroundColor: '#FFFFFF30'
         },
         exit: {
             x: 0,
             y: 0,
             scale: 1,
-            backgroundColor: '#000000'
         }
     }
 
@@ -76,19 +66,16 @@ const SideBar2 = () =>  {
         initial: {
             x: 0,
             y: 0,
-            backgroundColor: '#000000'
         },
         animate: {
             x: '-50vw',
             y: 500,
             scale: 4.5,
-            backgroundColor: '#FFFFFF30'
         },
         exit: {
             x: 0,
             y: 0,
             scale: 1,
-            backgroundColor: '#000000'
         }
     }
 

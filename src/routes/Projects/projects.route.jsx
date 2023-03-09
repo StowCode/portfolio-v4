@@ -6,13 +6,11 @@ import '../Projects/projects.styles.scss';
 
 const Projects = () => {
     return(
-        <div>
-            <div className='page projects-page'>
-                <AnimatedPage>
-                    <ProjectTile />
-                </AnimatedPage>
-            </div>
-            <SideBar />
+        <div className='projects-page page'>
+        <AnimatedPage>
+            <ProjectTile />
+        </AnimatedPage>
+        <SideBar />
         </div>
     )
 }
