@@ -1,6 +1,7 @@
 // Comps
 import AnimatedPage from '../../comps/animated-page.comp';
 import SideBar from '../../comps/sidebar/sidebar.comp';
+import Scene from '../../comps/threejs/test.comp';
 
 // Style
 import '../Home/home.styles.scss';
@@ -16,9 +17,8 @@ const Home = () => {
                     <h3>Frontend Developer</h3>
                 </div>
 
-                <div id='canvas'>
-
-                </div>
+                <div className='canvas-filter'></div>
+                <Scene />
             </div>
             </AnimatedPage>
             <SideBar />

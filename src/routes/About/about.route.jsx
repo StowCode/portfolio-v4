@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 
 // Styling and Images
 import '../About/about.styles.scss';
-import Headshot from '../../static/headshot.jpg';
-
 // Comps
 import SideBar from '../../comps/sidebar/sidebar.comp';
 import SkillBadge from '../../comps/skill-badge/badge.comp';
@@ -16,7 +14,7 @@ export default function About() {
             <AnimatedPage>
             <div className='bio-container'>
 
-                <img className='headshot' src={Headshot}/>
+                <img className='headshot' src="https://live.staticflickr.com/65535/52736232191_ef87166376.jpg"/>
 
                 <p id='bio' className='bio'>Hey, I'm Mitch.
                     <br></br>
@@ -129,3 +127,5 @@ export default function About() {
         
     )
 }
+
+

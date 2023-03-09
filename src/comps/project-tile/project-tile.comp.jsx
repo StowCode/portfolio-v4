@@ -31,13 +31,11 @@ const ProjectTile = () => {
                         layout
                         initial={{
                             width: '32vw',
-                            height: '32vw'
+                            height: '32vw',
                         }}
                         whileHover={{
-                            width: '35vw',
-                            height: '35vw',
-                            zIndex: '2',
-                            justifySelf: 'center'
+                            width: '33vw',
+                            height: '33vw',
                         }}
                         >
                         <h1>{item.name}</h1>
