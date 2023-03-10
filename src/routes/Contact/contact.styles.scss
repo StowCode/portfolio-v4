@@ -4,29 +4,27 @@
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0 10vw 100px;
 
+    .label-flex {
+        display: flex;
+        width: 72vw;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
     .tile-label {
         font-family: 'Vujahday Script', sans-serif;
         font-size: 32px;
     }
 
-    .github-label {
-        padding-top: 180px;
-        margin-left: 30vw;
-    }
-
-    .linkedin-label {
-        padding-top: 150px;
-        margin-left: 47vw;
-    }
-
-    .instagram-label {
-        padding-top: 160px;
-        margin-left: 27vw;
-    }
-
-    .email-label {
-        padding-top: 150px;
-        margin-left: 47vw;
+    .check-line {
+        height: 1px;
+        width: 100vw;
+        background-color: red;
+        display: block;
+        top: 225px;
+        position: absolute;
+        left: 0;
     }
 }
 

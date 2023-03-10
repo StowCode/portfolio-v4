@@ -45,3 +45,12 @@
         }
     }
 }
+
+a {
+    text-decoration: none;
+    color: transparent;
+
+    &:visited {
+        color: transparent;
+    }
+}

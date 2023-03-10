@@ -11,15 +11,16 @@ import { ReactComponent as Instagram } from '../../static/svg/instagram.svg';
 import { ReactComponent as Email } from '../../static/svg/mail.svg';
 
 const SideBar2 = () =>  {
+
     const GithubAnimations = {
         initial: {
             x: 0,
             y: 0,
         },
         animate: {
-            x: '-40vw',
+            x: '-80vw',
             y: 125,
-            scale: 4.5,
+            scale: 4,
         },
         exit: {
             x: 0,
@@ -34,9 +35,9 @@ const SideBar2 = () =>  {
             y: 0,
         },
         animate: {
-            x: '-50vw',
-            y: 250,
-            scale: 4.5,
+            x: '-58vw',
+            y: 40,
+            scale: 4,
         },
         exit: {
             x: 0,
@@ -51,9 +52,9 @@ const SideBar2 = () =>  {
             y: 0,
         },
         animate: {
-            x: '-40vw',
-            y: 375,
-            scale: 4.5,
+            x: '-37vw',
+            y: -45,
+            scale: 4,
         },
         exit: {
             x: 0,
@@ -68,9 +69,9 @@ const SideBar2 = () =>  {
             y: 0,
         },
         animate: {
-            x: '-50vw',
-            y: 500,
-            scale: 4.5,
+            x: '-15vw',
+            y: -130,
+            scale: 4,
         },
         exit: {
             x: 0,

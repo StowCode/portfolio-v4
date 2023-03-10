@@ -33,7 +33,7 @@ export default function About() {
                     <motion.div
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#e34f2680', '#e34f26', '#e34f2680' ]
                         }}
                         transition={{
@@ -42,13 +42,15 @@ export default function About() {
                             repeat: Infinity,
                         }}
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/html5-%23E34F2600.svg?style=for-the-badge&logo=html5&logoColor=white" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/html5-%23E34F2600.svg?style=for-the-badge&logo=html5&logoColor=white" 
+                        />
                     </motion.div>
 
                     <motion.div 
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#1572b680', '#1572b6', '#1572b680' ]
                         }}
                         transition={{
@@ -57,13 +59,15 @@ export default function About() {
                             repeat: Infinity,
                         }}
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/css3-%231572B600.svg?style=for-the-badge&logo=css3&logoColor=white" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/css3-%231572B600.svg?style=for-the-badge&logo=css3&logoColor=white" 
+                        />
                     </motion.div>
 
                     <motion.div 
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#32333080', '#323330', '#32333080' ]
                         }}
                         transition={{
@@ -72,13 +76,15 @@ export default function About() {
                             repeat: Infinity,
                         }}
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/javascript-%2332333000.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/javascript-%2332333000.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" 
+                        />
                     </motion.div>
 
                     <motion.div 
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#20232a80', '#20232a', '#20232a80' ]
                         }}
                         transition={{
@@ -87,13 +93,15 @@ export default function About() {
                             repeat: Infinity,
                         }}
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/react-%2320232a00.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/react-%2320232a00.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" 
+                        />
                     </motion.div>
 
                     <motion.div 
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#55555580', '#555555', '#55555580' ]
                         }}
                         transition={{
@@ -102,13 +110,15 @@ export default function About() {
                             repeat: Infinity,
                         }}    
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/threejs-%2355555500.svg?style=for-the-badge&logo=three.js&logoColor=white" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/threejs-%2355555500.svg?style=for-the-badge&logo=three.js&logoColor=white" 
+                        />
                     </motion.div>
 
                     <motion.div 
                         className='badge-flex'
                         animate={{
-                            scale: [1, 1.1, 1],
+                            // scale: [1, 1.1, 1],
                             background: ['#f24e1e80', '#f24e1e', '#f24e1e80' ],
                         }}
                         transition={{
@@ -117,8 +127,80 @@ export default function About() {
                             repeat: Infinity,
                         }}
                     >
-                        <img className="skillbutton" src="https://img.shields.io/badge/figma-%23F24E1E00.svg?style=for-the-badge&logo=figma&logoColor=white" />
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/figma-%23F24E1E00.svg?style=for-the-badge&logo=figma&logoColor=white" 
+                        />
                     </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            // scale: [1, 1.1, 1],
+                            background: ['#1572b680', '#1572b6', '#1572b680' ],
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/Framer-%23F24E1E00.svg?style=for-the-badge&logo=framer&logoColor=black" 
+                        />
+                    </motion.div>
+
+                    {/* NEEDS STYLED */}
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            // scale: [1, 1.1, 1],
+                            background: ['#1572b680', '#1572b6', '#1572b680' ],
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" 
+                        />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            // scale: [1, 1.1, 1],
+                            background: ['#ff69b480', '#ff69b4', '#ff69b480' ],
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/SASS-%23ff69b400.svg?style=for-the-badge&logo=SASS&logoColor=white" 
+                        />
+                    </motion.div>
+
+                    <motion.div 
+                        className='badge-flex'
+                        animate={{
+                            // scale: [1, 1.1, 1],
+                            background: ['#47013780', '#470137', '#47013780' ],
+                        }}
+                        transition={{
+                            duration: 3,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                        }}
+                    >
+                        <motion.img whileHover={{scale: 1.2, x: [5, -5, 3, -3, 0]}} className="skillbutton" 
+                        src="https://img.shields.io/badge/Adobe%20XD-%2347013700.svg?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" 
+                        />
+                    </motion.div>
+                    
                     
                 </div>
             </AnimatedPage>
@@ -127,5 +209,21 @@ export default function About() {
         
     )
 }
+
+/* BADGES TO ADD
+
+Adobe XD
+
+
+Bootstrap
+https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white
+
+Sass
+
+
+
+
+
+*/
 
 
