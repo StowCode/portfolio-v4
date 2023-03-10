@@ -2,12 +2,15 @@ import { Component } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+import Space from '../../models/gltf/space_exploration_wlp_series_8.glb';
  
 class Test extends Component {
     componentDidMount() {
         // === THREE.JS CODE START ===
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+        const camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
         //// DRACO LOADER TO LOAD DRACO COMPRESSED MODELS FROM BLENDER
         const dracoLoader = new DRACOLoader()
@@ -38,30 +41,55 @@ class Test extends Component {
             renderer.setPixelRatio(2)
         })
 
-        // NOT WORKING
-        loader.load('/models/gltf/space_exploration_wlp_series_8.glb', function (gltf) {
+        // Load Model
+        loader.load( Space , function (gltf) {
             const spaceScene = gltf.scene;
-            spaceScene.position.y = 4;
+            spaceScene.position.y = 5;
+            spaceScene.position.z = 0;
+            spaceScene.position.x = 0;
             
             scene.add(spaceScene)
         })
 
+        ///// SCENE LIGHTS
+        const ambient = new THREE.AmbientLight(0xa0a0fc, 0.82)
+        scene.add(ambient)
 
-        // document.body.appendChild( renderer.domElement );
-        const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        const material = new THREE.MeshBasicMaterial( { color: 0x00ff000 } );
-        const cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
-        camera.position.z = 2;
+        const sunLight = new THREE.DirectionalLight(0xe8c37b, 1.96)
+        sunLight.position.set(-69,44,14)
+        scene.add(sunLight)
 
-        var animate = function () {
-            requestAnimationFrame( animate );
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
+        ///// CREATE ORBIT CONTROLS
+        const controls = new OrbitControls(camera, renderer.domElement)
+
+        function setOrbitControlsLimits(){
+            controls.enableDamping = false
+            controls.dampingFactor = 1
+            controls.minDistance = 35
+            controls.maxDistance = 60
+            controls.enableRotate = true;
+            controls.enableZoom = false;
+            controls.maxPolarAngle = Math.PI /2.5
+            controls.autoRotate = true
+            controls.autoRotateSpeed = 3
+            controls.enablePan = false
+        }
+        
+        setOrbitControlsLimits()
+
+
+        // Camera Position
+        camera.position.z = 0;
+        camera.position.y = 0;
+        camera.position.x = 10;
+
+        var renderLoop = function () {
+            controls.update()
+            requestAnimationFrame( renderLoop );
             renderer.render( scene, camera );
         };
-        animate();
-        // === THREE.JS EXAMPLE CODE END ===
+        renderLoop();
+
     }
     render() {
         return (
