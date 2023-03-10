@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import Footer from '../../comps/footer/footer.comp';
 
 import '../Navigation/navigation.styles.scss';
+import SideBar from '../../comps/sidebar/sidebar.comp';
 
 const Navigation = () => {
     return(
@@ -21,7 +22,8 @@ const Navigation = () => {
                 </ul>
                 
             </div>
-
+        
+        <SideBar />
         <Outlet />
         <Footer />
         </Fragment>

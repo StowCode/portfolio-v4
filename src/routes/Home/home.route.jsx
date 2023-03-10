@@ -1,6 +1,5 @@
 // Comps
 import AnimatedPage from '../../comps/animated-page.comp';
-import SideBar from '../../comps/sidebar/sidebar.comp';
 import Scene from '../../comps/threejs/test.comp';
 
 // Style
@@ -21,7 +20,6 @@ const Home = () => {
                 <Scene />
             </div>
             </AnimatedPage>
-            <SideBar />
         </div>
     )
 }

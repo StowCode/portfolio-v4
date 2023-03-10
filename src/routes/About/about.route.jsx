@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 // Styling and Images
 import '../About/about.styles.scss';
 // Comps
-import SideBar from '../../comps/sidebar/sidebar.comp';
 import SkillBadge from '../../comps/skill-badge/badge.comp';
 import AnimatedPage from '../../comps/animated-page.comp';
 
@@ -204,7 +203,6 @@ export default function About() {
                     
                 </div>
             </AnimatedPage>
-            <SideBar />
         </div>    
         
     )

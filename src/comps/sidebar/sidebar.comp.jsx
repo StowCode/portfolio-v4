@@ -11,23 +11,31 @@ const SideBar = () =>  {
     return(
         <div className='sidebar'>
              <div className='icons'>
-                <a href="https://github.com/StowCode" target="blank">
-                    <Github className='icon'/>
-                </a>
 
-                <a href='https://www.linkedin.com/in/mitchstowman/' target='blank'>
-                    <LinkedIn className='icon'/>
-                </a>
-                
-                <a href='https://www.instagram.com/mitch.stowman/' target='blank'>
-                    <Instagram className='icon'/>
-                </a>
-                
-                <a href="mailto:mitchellstowman@gmail.com">
-                    <Email className='icon'/>
-                </a>
+                <div className='icon-container'>
+                    <a href="https://github.com/StowCode" target="blank">
+                        <Github className='icon'/>
+                    </a>
+                </div>
 
-                <div className='line'></div>
+                <div className='icon-container'>
+                    <a href='https://www.linkedin.com/in/mitchstowman/' target='blank'>
+                        <LinkedIn className='icon'/>
+                    </a>
+                </div>
+
+                <div className='icon-container'>
+                    <a href='https://www.instagram.com/mitch.stowman/' target='blank'>
+                        <Instagram className='icon'/>
+                    </a>
+                </div>
+
+                <div className='icon-container'>
+                    <a href="mailto:mitchellstowman@gmail.com">
+                        <Email className='icon'/>
+                    </a>
+                </div>
+
             </div>
         </div>
     )

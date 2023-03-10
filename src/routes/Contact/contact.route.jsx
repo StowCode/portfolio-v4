@@ -1,6 +1,5 @@
 import '../Contact/contact.styles.scss';
 import AnimatedPage from '../../comps/animated-page.comp';
-import SideBar2 from '../../comps/sidebar2/sidebar2.comp';
 import { motion } from 'framer-motion';
 import { useState, useEffect, useLayoutEffect } from 'react';
 
@@ -46,8 +45,6 @@ const Contact = () => {
                 </div>
 
             </AnimatedPage>
-            <SideBar2 />
-
         </div>
     )
 }
