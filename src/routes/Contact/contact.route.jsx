@@ -2,10 +2,18 @@ import '../Contact/contact.styles.scss';
 import AnimatedPage from '../../comps/animated-page.comp';
 import SideBar2 from '../../comps/sidebar2/sidebar2.comp';
 import { motion } from 'framer-motion';
+import { useState, useEffect, useLayoutEffect } from 'react';
 
 const Contact = () => {
+    const [isOn, setIsOn] = useState(false);
+
+    const toggleSwitch = () => setIsOn(!isOn);
+
     return(
         <div className='contact-page page'>
+            <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
+                <motion.div className="handle" layout />
+            </div>
             <AnimatedPage>
                 <div className='label-flex'>
                     <motion.h4 
@@ -39,6 +47,7 @@ const Contact = () => {
 
             </AnimatedPage>
             <SideBar2 />
+
         </div>
     )
 }

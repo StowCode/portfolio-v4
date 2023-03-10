@@ -12,7 +12,7 @@ import { ReactComponent as Email } from '../../static/svg/mail.svg';
 
 const SideBar2 = () =>  {
 
-    const GithubAnimations = {
+    /* const GithubAnimations = {
         initial: {
             x: 0,
             y: 0,
@@ -78,13 +78,13 @@ const SideBar2 = () =>  {
             y: 0,
             scale: 1,
         }
-    }
+    } */
 
     return(
         <div className='animated-sidebar'>
              <div className='motion-icons'>
                 <motion.div
-                    variants={GithubAnimations}
+                    // variants={GithubAnimations}
                     initial='initial'
                     animate='animate'
                     exit='exit'
@@ -100,7 +100,7 @@ const SideBar2 = () =>  {
                 </motion.div>
                 
                 <motion.div
-                    variants={LinkedinAnimations}
+                    // variants={LinkedinAnimations}
                     initial='initial'
                     animate='animate'
                     exit='exit'
@@ -116,7 +116,7 @@ const SideBar2 = () =>  {
                 </motion.div>
                 
                 <motion.div
-                    variants={InstagramAnimations}
+                    // variants={InstagramAnimations}
                     initial='initial'
                     animate='animate'
                     exit='exit'
@@ -133,7 +133,7 @@ const SideBar2 = () =>  {
                 </motion.div>
 
                 <motion.div
-                    variants={EmailAnimations}
+                    // variants={EmailAnimations}
                     initial='initial'
                     animate='animate'
                     exit='exit'
@@ -148,7 +148,6 @@ const SideBar2 = () =>  {
                     </div>
                 </motion.div>
                 
-                <div className='line'></div>
             </div>
         </div>
     )
