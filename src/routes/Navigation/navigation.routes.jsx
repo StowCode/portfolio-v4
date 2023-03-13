@@ -17,7 +17,7 @@ const Navigation = () => {
                     <Link className='link' to='/'>Home</Link>
                     <Link className='link' to='/about'>About</Link>
                     <Link className='link' to='/projects'>Projects</Link>
-                    <Link className='link' to='/contact'>Contact</Link>
+{/*                     <Link className='link' to='/contact'>Contact</Link> */}
                     <a href='file' download><span className='resume-btn link'>Resum&eacute;</span></a>
                 </ul>
                 

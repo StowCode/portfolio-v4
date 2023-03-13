@@ -1,6 +1,6 @@
 .home-page {
     color: white;
-    height: calc(100vh - 125px);
+    height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 
@@ -16,12 +16,12 @@
         z-index: 5;
 
         h3 {
-            font-size: 4vw;
+            font-size: 3vw;
             color: gray;
         }
     
         h1 {
-            font-size: 8vw;
+            font-size: 6vw;
         }
     }
 
@@ -29,7 +29,7 @@
     #canvas {
         z-index: 1;
         position: absolute;
-        margin-top: 300px;
+        margin-top: 125px;
     }
 
     .canvas-filter {
