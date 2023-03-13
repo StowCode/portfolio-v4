@@ -66,23 +66,17 @@ const ProjectTile = () => {
         <div className='project-tiles'>
             { projects.map(item => {
                 return(
-                    <motion.div
+                    <div
                         key={item.key}
                         className='motion-tile'
-/*                         layout
-                        initial={{
-                            width: '32vw',
-                            height: '32vw',
-                        }}
-                        whileHover={{
-                            width: '33vw',
-                            height: '33vw',
-                        }} */
+                        style={{backgroundImage: `url(${item.image}`}}
                         >
-                        <h1>{item.name}</h1>
-                        <p>{item.description}</p>
-                        <img src={item.image}></img>
-                    </motion.div>
+                        <div className='content-container'>
+                            <h1>{item.name}</h1>
+                            <p>{item.description}</p>
+                            <span className='filter'></span>
+                        </div>
+                    </div>
                 )
             })}
 
