@@ -60,6 +60,8 @@ const ProjectTile = () => {
     // Can I use state to modify position/layout?  Still
     // like the idea of expanding the tile to a full page
 
+    // Set background image from data within the react component?
+
     return(
         <div className='project-tiles'>
             { projects.map(item => {

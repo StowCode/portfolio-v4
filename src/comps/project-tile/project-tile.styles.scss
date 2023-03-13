@@ -29,7 +29,6 @@
             font-size: 22px;
             margin: 15px;
             z-index: 1;
-            display: none;
         }
 
         p {
@@ -37,7 +36,6 @@
             width: 90%;
             margin: 0 auto;
             z-index: 1;
-            display: none;
         }
 
         img {
@@ -45,6 +43,7 @@
             min-width: 300px;
             height: auto;
             filter: brightness(100%);
+            display: none;
         }
 
 
