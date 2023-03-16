@@ -1,11 +1,18 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Footer from '../../comps/footer/footer.comp';
+import { motion } from 'framer-motion';
 
 import '../Navigation/navigation.styles.scss';
 import SideBar from '../../comps/sidebar/sidebar.comp';
 
+
 const Navigation = () => {
+    const [isOn, setIsOn] = useState(false);
+
+    const setTrue = () => setIsOn(true);
+    const setFalse = () => setIsOn(false);
+
     return(
         <Fragment>
 
@@ -14,16 +21,17 @@ const Navigation = () => {
                     <img className='nav-logo' src='https://ucarecdn.com/aac08051-ae26-4543-b75b-857732aaeb05/-/preview/-/quality/smart/' alt='stowcode logo'/>
                 </Link>
                 <ul className='navlinks'>
-                    <Link className='link' to='/'>Home</Link>
-                    <Link className='link' to='/about'>About</Link>
-                    <Link className='link' to='/projects'>Projects</Link>
-                    <Link className='link' to='/contact'>Contact</Link>
+                    <Link className='link' to='/' onClick={setFalse}>Home</Link>
+                    <Link className='link' to='/about' onClick={setFalse}>About</Link>
+                    <Link className='link' to='/projects' onClick={setFalse}>Projects</Link>
+                    {/* <Link className='link' to='/contact' onClick={setTrue}>Contact</Link> */}
                     <a href='file' download><span className='resume-btn link'>Resum&eacute;</span></a>
                 </ul>
                 
             </div>
         
         <SideBar />
+
         <Outlet />
         <Footer />
         </Fragment>

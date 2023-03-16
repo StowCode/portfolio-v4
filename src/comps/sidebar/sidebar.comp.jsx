@@ -1,3 +1,6 @@
+//
+import { motion } from 'framer-motion';
+
 // Style
 import './sidebar.styles.scss';
 
@@ -7,37 +10,42 @@ import { ReactComponent as LinkedIn } from '../../static/svg/linkedin.svg';
 import { ReactComponent as Instagram } from '../../static/svg/instagram.svg';
 import { ReactComponent as Email } from '../../static/svg/mail.svg';
 
-const SideBar = () =>  {
-    return(
-        <div className='sidebar'>
-             <div className='icons'>
+const SideBar = (props) =>  {
 
-                <div className='icon-container'>
+    return(
+        <motion.div
+            layout
+            className='sidebar'
+            data-ison={props.isOn}
+        >
+             <motion.div className='icons'>
+
+                <motion.div className='icon-container'>
                     <a href="https://github.com/StowCode" target="blank">
                         <Github className='icon'/>
                     </a>
-                </div>
+                </motion.div>
 
-                <div className='icon-container'>
+                <motion.div className='icon-container'>
                     <a href='https://www.linkedin.com/in/mitchstowman/' target='blank'>
                         <LinkedIn className='icon'/>
                     </a>
-                </div>
+                </motion.div>
 
-                <div className='icon-container'>
+                <motion.div className='icon-container'>
                     <a href='https://www.instagram.com/mitch.stowman/' target='blank'>
                         <Instagram className='icon'/>
                     </a>
-                </div>
+                </motion.div>
 
-                <div className='icon-container'>
+                <motion.div className='icon-container'>
                     <a href="mailto:mitchellstowman@gmail.com">
                         <Email className='icon'/>
                     </a>
-                </div>
+                </motion.div>
 
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 
