@@ -1,6 +1,6 @@
 .navbar {
     background-color: black;
-    height: 125px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,11 +18,11 @@
         width: 45vw;
         display: flex;
         justify-content: space-between;
-        font-family: 'Roboto Mono';
+        font-family: 'Roboto Mono', monospace;
 
         .link {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none;
 
             &:visited {

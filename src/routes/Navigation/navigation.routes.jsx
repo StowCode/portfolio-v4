@@ -21,10 +21,10 @@ const Navigation = () => {
                     <img className='nav-logo' src='https://ucarecdn.com/aac08051-ae26-4543-b75b-857732aaeb05/-/preview/-/quality/smart/' alt='stowcode logo'/>
                 </Link>
                 <ul className='navlinks'>
-                    <Link className='link' to='/' onClick={setFalse}>Home</Link>
-                    <Link className='link' to='/about' onClick={setFalse}>About</Link>
-                    <Link className='link' to='/projects' onClick={setFalse}>Projects</Link>
-                    {/* <Link className='link' to='/contact' onClick={setTrue}>Contact</Link> */}
+                    <Link className='link' to='/'>Home</Link>
+                    <Link className='link' to='/about'>About</Link>
+                    <Link className='link' to='/projects'>Projects</Link>
+{/*                     <Link className='link' to='/contact'>Contact</Link> */}
                     <a href='file' download><span className='resume-btn link'>Resum&eacute;</span></a>
                 </ul>
                 

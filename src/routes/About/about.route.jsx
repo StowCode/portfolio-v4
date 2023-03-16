@@ -15,10 +15,8 @@ export default function About() {
 
                 <img className='headshot' src="https://live.staticflickr.com/65535/52736232191_ef87166376.jpg"/>
 
-                <p id='bio' className='bio'>Hey, I'm Mitch.
-                    <br></br>
-                    <br></br>
-                    I'm a Frontend Developer skilled in HTML, CSS, JS, and React, with a special interest in animation and Three.js. My background in visual design and public education has given me years of experience delivering information effectively, and now I use those skills to create efficient and intuitive website architecture
+                <p id='bio' className='bio'>
+                    I'm a Frontend Developer skilled in HTML, CSS, JavaScript, and React, with a special interest in animation and Three.js. My background in visual design and public education has given me years of experience delivering information effectively, and now I use those skills to create efficient and intuitive website architecture
                     <br></br>
                     <br></br>
                     I know that I’m happiest when I am creating and building, and I’m excited to bring my skills, ideas, and energy, to your team.
