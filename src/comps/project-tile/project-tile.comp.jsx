@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Arch from '../../static/arch.jpg';
 import Sneakers from '../../static/sneakers-screenshot.jpg';
 import Bitcoin from '../../static/bitcoin-screenshot.jpg';
-// ROBOT?
+import Robot from '../../static/robot-screenshot.jpg';
 import StarFlix from '../../static/starflix.png';
 import Stowcode from '../../static/stowcode_screenshot.png';
 
@@ -17,50 +17,50 @@ const ProjectTile = () => {
             name: 'Arch Studios',
             description: 'Built with React and SCSS, this website features a modern and minimalist design.',
             tech: 'HTML, SCSS, JavaScript, React, React-Router',
-            image: Arch
+            image: Arch,
+            url: 'https://portfolio-v3-1.vercel.app/'
         },
         {
             key: 2,
             name: 'Sneakers',
             description: 'This demo e-commerce page allows the user to add items to their cart as well as modify or delete those items.',
             tech: 'HTML, SCSS, JavaScript, React',
-            image: Sneakers
+            image: Sneakers,
+            url: 'https://sneakers-ecommerce-5kymjeht8-stowcode.vercel.app/'
         },
         {
             key: 3,
             name: 'Bitcoin Alarm',
             description: 'Built in React and utilizing the CoinGecko API, this app allows the usuer to set custom price alerts for Bitcoin.',
             tech: 'HTML, SCSS, JavaScript, React',
-            image: Bitcoin
+            image: Bitcoin,
+            url: 'https://gilfoyles-bitcoin-alarm-kwk8q7vj2-stowcode.vercel.app/'
         },
         {
             key: 4,
             name: 'Robot Rolodex',
             description: 'This website features a databse of users with live search filtering.',
             tech: 'HTML, SCSS, JavaScript, React',
-            image: ''
+            image: Robot,
+            url: 'https://robot-rolodex-2ggfwlli5-stowcode.vercel.app/'
         },
         {
             key: 5,
             name: 'StarFlix',
             description: '',
             tech: 'HTML, CSS, JavaScript',
-            image: StarFlix
+            image: StarFlix,
+            url: 'https://starflix-on06lah1q-stowcode.vercel.app/'
         },
         {
             key: 6,
             name: 'Portfolio',
             description: 'The site you are currently using!  React, SCSS, Three.js, Framer Motion.',
             tech: 'HTML, SCSS, React, Three.js, Framer-Motion, React-Router',
-            image: Stowcode
+            image: Stowcode,
+            url: 'https://portfolio-v3-1.vercel.app/'
         }
     ]
-    
-    // IDEA:
-    // Can I use state to modify position/layout?  Still
-    // like the idea of expanding the tile to a full page
-
-    // Set background image from data within the react component?
 
     return(
         <div className='project-tiles'>
@@ -75,6 +75,10 @@ const ProjectTile = () => {
                             <h1>{item.name}</h1>
                             <p>{item.description}</p>
                             <span className='filter'></span>
+                            <a href={item.url} target='blank'>
+                                <button>View Live</button>
+                            </a>
+                            
                         </div>
                     </div>
                 )

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import '../Navigation/navigation.styles.scss';
 import SideBar from '../../comps/sidebar/sidebar.comp';
+import Resume from '../../static/resume.pdf';
 
 
 const Navigation = () => {
@@ -25,7 +26,7 @@ const Navigation = () => {
                     <Link className='link' to='/about'>About</Link>
                     <Link className='link' to='/projects'>Projects</Link>
 {/*                     <Link className='link' to='/contact'>Contact</Link> */}
-                    <a href='file' download><span className='resume-btn link'>Resum&eacute;</span></a>
+                    <a href={Resume} download='Stowman-Resume'><span className='resume-btn link'>Resum&eacute;</span></a>
                 </ul>
                 
             </div>

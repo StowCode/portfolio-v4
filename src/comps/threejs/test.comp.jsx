@@ -44,7 +44,7 @@ class Test extends Component {
         // Load Model
         loader.load( Space , function (gltf) {
             const spaceScene = gltf.scene;
-            spaceScene.position.y = 5;
+            spaceScene.position.y = 0;
             spaceScene.position.z = 0;
             spaceScene.position.x = 0;
             
@@ -79,8 +79,7 @@ class Test extends Component {
 
 
         // Camera Position
-        camera.position.z = 0;
-        camera.position.y = 0;
+
         camera.position.x = 10;
 
         var renderLoop = function () {
