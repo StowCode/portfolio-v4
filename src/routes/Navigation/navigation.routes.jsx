@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import '../Navigation/navigation.styles.scss';
 import SideBar from '../../comps/sidebar/sidebar.comp';
-import Resume from '../../static/resume.pdf';
+import Resume from '../../static/resume2.pdf';
 
 
 const Navigation = () => {

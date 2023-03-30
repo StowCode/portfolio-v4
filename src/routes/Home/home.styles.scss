@@ -43,13 +43,12 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .home-page {
         color: white;
-        height: 100dvh;
+        height: calc(100vh - 80px);
         font-family: 'Source Sans Pro', sans-serif;
         text-align: center;
-        overflow-y: hidden;
     
         .flex-container {
             max-width: 2000px;
@@ -79,15 +78,115 @@
         // Three.js Component
         #canvas {
             z-index: 1;
-            position: absolute;
+            position: fixed;
             margin-top: 125px;
+            height: 100vh;
         }
     
         .canvas-filter {
             position: absolute;
             top: 0;
             z-index: 2;
-            height: 100%;
+            width: 100vw;
+            background-color: rgba(0,0,0,.5);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-page {
+        color: white;
+        height: calc(100vh - 80px);
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+    
+        .flex-container {
+            max-width: 2000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 80px;
+        }
+    
+        .hero-text {
+            z-index: 5;
+            text-align: left;
+            transform: translateX(-8vw);
+    
+            h3 {
+                font-size: 5vw;
+                color: rgb(167, 167, 167);
+                text-shadow: 0px 0px 5px black;
+            }
+        
+            h1 {
+                font-size: 9vw;
+                padding: 10px 0px;
+            }
+        }
+    
+        // Three.js Component
+        #canvas {
+            z-index: 1;
+            position: fixed;
+            margin-top: 125px;
+            height: 100vh;
+        }
+    
+        .canvas-filter {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            width: 100vw;
+            background-color: rgba(0,0,0,.5);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .home-page {
+        color: white;
+        height: calc(100vh - 80px);
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+    
+        .flex-container {
+            max-width: 2000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 80px;
+        }
+    
+        .hero-text {
+            z-index: 5;
+            text-align: left;
+            transform: translateX(-8vw);
+    
+            h3 {
+                font-size: 5vw;
+                color: rgb(167, 167, 167);
+                text-shadow: 0px 0px 5px black;
+            }
+        
+            h1 {
+                font-size: 9vw;
+                padding: 10px 0px;
+            }
+        }
+    
+        // Three.js Component
+        #canvas {
+            z-index: 1;
+            position: fixed;
+            margin-top: 125px;
+            height: 100vh;
+        }
+    
+        .canvas-filter {
+            position: absolute;
+            top: 0;
+            z-index: 2;
             width: 100vw;
             background-color: rgba(0,0,0,.5);
         }

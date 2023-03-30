@@ -7,7 +7,6 @@ const Projects = () => {
     return(
         <div className='projects-page page'>
         <AnimatedPage>
-            <h1>HOVER TO LEARN MORE...</h1>
             <ProjectTile />
         </AnimatedPage>
         </div>

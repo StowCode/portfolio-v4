@@ -86,8 +86,8 @@ const ProjectTile = () => {
                 return(
                     <div
                         key={item.key}
-                        className='motion-tile'
-                        style={{backgroundImage: `url(${item.image}`}}
+                        className='tile'
+                        style={{backgroundImage: `url(${item.image}`,backgroundPosition: 'center'} }
                         >
                         <div className='content-container'>
                             <h1>{item.name}</h1>

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
@@ -11,6 +12,11 @@ import Contact from './routes/Contact/contact.route';
 
 function App() {
   const location = useLocation();
+  const [ menuIsOpen, setMenuIsOpen ] = useState(false);
+
+  const menuHandler = () => {
+    { menuIsOpen ? setMenuIsOpen(false) : setMenuIsOpen(true)}
+  }
 
   return (
     <div className="App">

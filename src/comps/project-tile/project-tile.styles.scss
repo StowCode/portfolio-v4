@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    .motion-tile {
+    .tile {
         position: relative;
         color: white;
         border: 1px solid #79f170;
@@ -67,13 +67,83 @@
                     cursor: pointer;
                 }
             }
-
         }
-
-
     }
-
 }
 
+@media screen and (max-width: 800px) {
+    .project-tiles {
+        position: relative;
+        padding-top: 25px;
+        width: 80vw;
+        margin: 0 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+        .tile {
+            position: relative;
+            color: white;
+            border: 1px solid #79f170;
+            margin: 10px;
+            width: 55vw;
+            height: 35vw;
+            text-align: center;
+            min-width: 250px;
+            min-height: 175px;
+            overflow: hidden;
+            background-size:cover;
+            background-repeat: none;
+    
+            &:hover {
+                border: 1px solid white;
+                box-shadow: 0px 0px 10px #79f170;
+    
+                .content-container {
+                    display: block;
+                }
+            }
+    
+            .content-container {
+                position: relative;
+                background-color: rgba(0,0,0,.9);
+                height: 100%;
+                display: none;
+                text-align: center;
+                font-family: 'Roboto Mono', sans-serif;
+    
+                h1 {
+                    font-size: 16px;
+                    z-index: 1;
+                    padding-top: 15px;
+                    pointer-events: none;
+                }
+        
+                p {
+                    font-size: 12px;
+                    z-index: 1;
+                    margin: 7px;
+                    pointer-events: none;
+                }
+    
+                button {
+                    background-color: #79f170;
+                    padding: 2px 5px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border: none;
+                    outline: none;
+                    border-radius: 2px;
+    
+                    &:hover {
+                        background-color: rgba(255,255,255,.9);
+                        box-shadow: 0px 0px 10px #79f170;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
 
 

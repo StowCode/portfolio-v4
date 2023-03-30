@@ -11,10 +11,11 @@ export default function About() {
         
         <div className='aboutme page'>
             <AnimatedPage>
+            <h1>About Me</h1>
             <div className='bio-container'>
 
                 <img className='headshot' src="https://live.staticflickr.com/65535/52736232191_ef87166376.jpg"/>
-
+                
                 <p id='bio' className='bio'>
                     I'm a Frontend Developer skilled in HTML, CSS, JavaScript, and React, with a special interest in animation and Three.js. My background in visual design and public education has given me years of experience delivering information effectively, and now I use those skills to create efficient and intuitive website architecture
                     <br></br>
