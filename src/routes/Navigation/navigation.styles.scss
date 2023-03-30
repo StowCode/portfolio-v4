@@ -106,7 +106,7 @@ a {
     }
 }
 
-/* @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .navbar {
         background-color: black;
         height: 65px;
@@ -125,14 +125,14 @@ a {
     
         .navlinks {
             width: 55vw;
-            display: none;
+            display: flex;
             align-items: center;
             justify-content: space-between;
             font-family: 'Roboto Mono', monospace;
     
             .link {
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             text-decoration: none;
     
                 &:visited {
@@ -155,4 +155,4 @@ a {
             }
         }
     }
-} */
+}
