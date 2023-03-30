@@ -11,8 +11,7 @@ import Resume from '../../static/resume.pdf';
 const Navigation = () => {
     const [isOn, setIsOn] = useState(false);
 
-    const setTrue = () => setIsOn(true);
-    const setFalse = () => setIsOn(false);
+    
 
     return(
         <Fragment>
@@ -25,7 +24,6 @@ const Navigation = () => {
                     <Link className='link' to='/'>Home</Link>
                     <Link className='link' to='/about'>About</Link>
                     <Link className='link' to='/projects'>Projects</Link>
-{/*                     <Link className='link' to='/contact'>Contact</Link> */}
                     <a href={Resume} download='Stowman-Resume'><span className='resume-btn link'>Resum&eacute;</span></a>
                 </ul>
                 
