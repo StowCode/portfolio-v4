@@ -7,7 +7,7 @@ import Sneakers from '../../static/sneakers-screenshot.jpg';
 import Bitcoin from '../../static/bitcoin-screenshot.jpg';
 import Robot from '../../static/robot-screenshot.jpg';
 import StarFlix from '../../static/starflix.png';
-import Stowcode from '../../static/stowcode_screenshot.png';
+import Stowcode from '../../static/stowcode-screenshot.jpg';
 import Brewery from '../../static/brewery-screenshot.jpg';
 import Moonager from '../../static/moonager-screenshot.png';
 
@@ -87,7 +87,7 @@ const ProjectTile = () => {
                     <div
                         key={item.key}
                         className='tile'
-                        style={{backgroundImage: `url(${item.image}`,backgroundPosition: 'center'} }
+                        style={{backgroundImage: `url(${item.image}`} }
                         >
                         <div className='content-container'>
                             <h1>{item.name}</h1>
