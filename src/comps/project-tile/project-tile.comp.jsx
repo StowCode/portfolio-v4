@@ -44,7 +44,7 @@ const ProjectTile = () => {
             description: 'Coming Soon - Resource management app built in React using HTML, SCSS, TypeScript, React-Router',
             tech: 'HTML, SCSS, TypeScript, React',
             image: Moonager,
-            url: 'https://gilfoyles-bitcoin-alarm-kwk8q7vj2-stowcode.vercel.app/'
+            url: !!null  // is a falsy value
         },
         {
             key: 5,
@@ -94,7 +94,7 @@ const ProjectTile = () => {
                             <p>{item.description}</p>
                             <span className='filter'></span>
                             <a href={item.url} target='blank'>
-                                <button>View</button>
+                                { item.url ? <button>View</button> : null}
                             </a>
                             
                         </div>
